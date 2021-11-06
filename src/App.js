@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import FullDictionary from './pages/FullDictionary';
 import NewWord from './pages/NewWord';
 import WordOfDay from './pages/WordOfDay';
-import MainNav from './components/MainNav';
+import MainNav from './components/layout/MainNav';
 
 const App = () => {
   return (
