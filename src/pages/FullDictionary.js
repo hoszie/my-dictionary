@@ -1,3 +1,5 @@
+import WordList from '../components/words/WordList';
+
 const DUMMY_DATA = [
   {
     id: "w1",
@@ -16,17 +18,8 @@ const DUMMY_DATA = [
 const FullDictionary = () => {
   return (
     <section>
-      <ul>
-        <h2>This is my full Dictionary</h2>
-        {DUMMY_DATA.map((word) => {
-          return (
-            <li key={word.id}>
-              {word.title} - {word.definition}
-              {<br />}{word.phonetic}
-            </li>
-          );
-        })}
-      </ul>
+      <h2>My Full Dictionary</h2>
+      <WordList words={DUMMY_DATA}/>
     </section>
   );
 };
